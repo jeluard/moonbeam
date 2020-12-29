@@ -16,7 +16,7 @@ jobs:
   ####### Check files and formatting #######
 
   check-copyright:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout
         if: github.event_name == 'pull_request_target'
